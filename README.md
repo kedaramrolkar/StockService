@@ -14,33 +14,34 @@ Package the project:
 Run the packaged jar:
 > java -jar target\StockApi-0.1.0.jar
 
-NOTE: The project is madeup of RestFul web services hence to use the services you need to use proper REST Client 
+# NOTE: 
+The project is madeup of RestFul web services hence to use the services you need to use proper REST Client 
 e.g. Advanced REST Client for Chrome.
 
 # Create Stock
 
 To Create a stock item 'abc' with initial price 4.5:
 
-PUT http://localhost:8080/stock/abc/
-REQUEST BODY:
+> PUT http://localhost:8080/stock/abc/
+> REQUEST BODY:
 {
   "value" : 4.5
 }
 
 RESPONSE:
-200 OK: if valid
-200 OK: if valid and no value is provided. Default value 0.0 will be used
-409 CONFLICT: the stock is already present
+> 200 OK: if valid
+> 200 OK: if valid and no value is provided. Default value 0.0 will be used
+> 409 CONFLICT: the stock is already present
 
 # Get Stock
 
 To get a stock item 'abc':
 
-GET http://localhost:8080/stock/abc/
+> GET http://localhost:8080/stock/abc/
 
 RESPONSE:
-200 OK: if valid
-404 NOT_FOUND: the stock is absent
+> 200 OK: if valid
+> 404 NOT_FOUND: the stock is absent
 
 # Modify Stock
 
