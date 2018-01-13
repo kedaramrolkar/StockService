@@ -74,4 +74,5 @@ To get stats on a stock item 'abc':
 RESPONSE:
 
 > 200 OK: if valid, the value will be changed
+
 > 404 NOT_FOUND: the stock is absent
