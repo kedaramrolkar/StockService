@@ -14,7 +14,7 @@ Package the project:
 Run the packaged jar:
 > java -jar target\StockApi-0.1.0.jar
 
-The project is madeup of RestFul web services hence to use the services you need to use proper REST Client 
+NOTE: The project is madeup of RestFul web services hence to use the services you need to use proper REST Client 
 e.g. Advanced REST Client for Chrome.
 
 # Create Stock
